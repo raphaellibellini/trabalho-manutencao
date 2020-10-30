@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="#{layoutMB.template}">
+    
+    <ui:define name="metadata">
+        
+        <ui:param name="title" value="Sobre"/>
+        
+        <style type="text/css">
+            
+            .ui-datatable .ui-datatable-header {
+                text-align: right !important;
+            }
+            
+        </style>
+        
+    </ui:define>
+
+    <ui:define name="body">
+        
+        <h:form>
+            <p:growl id="msgs" showDetail="true" />
+
+            <p:panel id="presentation" header="Apresentação" style="margin-bottom:20px">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <h:outputText value="A Biblioteca Municipal Oscar Bellini é a instituição cultural mais antiga em funcionamento na cidade de Rondonópolis.
+                                  Ao longo dos seus 113 anos, constituiu um importante acervo bibliográfico que vem atraindo usuários locais e de outras regiões e contribuindo para o desenvolvimento da pesquisa e leitura.
+                                  O prédio onde está instalada tem dois andares com acessibilidade aos portadores de deficiência." />
+                </h:panelGrid>
+            </p:panel>
+            
+            <p:panel id="manut" header="Manutenção do site" style="margin-bottom:20px">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <h:outputText value="Raphaelli Bellini" />
+                </h:panelGrid>
+            </p:panel>
+            
+            <p:panel id="dev" header="Desenvolvimento do site" style="margin-bottom:20px">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <h:outputText value="Daniel Meireles" />
+                </h:panelGrid>
+            </p:panel>
+            
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>
